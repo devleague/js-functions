@@ -10,7 +10,7 @@ Adds two numbers.
 **Parameters**
 
 **x**: number
-
+circumference
 **y**: number
 
 **Returns**: number, the sum
@@ -169,3 +169,13 @@ Joins two strings with a space.
 **word2**: string
 
 **Returns**: string, joined the words joined with a space
+
+createCircle(radius)
+-----------------------------
+Returns a circle object with the properties `circumferance` and `area`.
+
+**Parameters**
+
+**radius**: number
+
+**Returns**: object, circle
