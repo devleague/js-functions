@@ -3,6 +3,40 @@ js-functions
 
 Javascript Function Exercises
 
+Create 20 functions by following the comments in `functions.js`.
+
+---
+
+numberToString(n)
+-----------------------------
+Converts a number a string.
+
+**Parameters**
+
+**n**: number
+
+**Returns**: string, the number as a string
+
+increase(n)
+-----------------------------
+Adds one to a given number
+
+**Parameters**
+
+**n**: number
+
+**Returns**: number
+
+decrease(n)
+-----------------------------
+Subtracts one from a given number
+
+**Parameters**
+
+**n**: number
+
+**Returns**: number
+
 add(x, y)
 -----------------------------
 Adds two numbers.
@@ -10,7 +44,7 @@ Adds two numbers.
 **Parameters**
 
 **x**: number
-circumference
+
 **y**: number
 
 **Returns**: number, the sum
@@ -51,19 +85,19 @@ Divides the first number by the second.
 
 **Returns**: number, the quotient
 
-numberToString(n)
+square(x,)
 -----------------------------
-Converts a number a string.
+Multiplies a number by itself.
 
 **Parameters**
 
-**n**: number
+**x,**: number, number to be squared
 
-**Returns**: string, the number as a string
+**Returns**: number, squared
 
 calculate(operation, x, y)
 -----------------------------
-Prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4"
+Prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
 Returns the result.
 
 **Parameters**
@@ -75,6 +109,42 @@ Returns the result.
 **y**: number
 
 **Returns**: number, the result
+
+isGreaterThan(x, y)
+-----------------------------
+Returns true if x is greater than y
+
+**Parameters**
+
+**x**: number
+
+**y**: number
+
+**Returns**: boolean, x is larger than y
+
+isLessThan(x, y)
+-----------------------------
+Returns true if x is less than y
+
+**Parameters**
+
+**x**: number
+
+**y**: number
+
+**Returns**: boolean, x is smaller than y
+
+areEqual(x, y)
+-----------------------------
+Returns true if a and b are equal
+
+**Parameters**
+
+**x**: number
+
+**y**: number
+
+**Returns**: boolean, the numbers are equal
 
 minimum(a, b)
 -----------------------------
@@ -147,16 +217,6 @@ set its `reviews` field to 1.
 
 **restaurant**: object, represents a restaurant
 
-
-square(x,)
------------------------------
-Multiplies a number by itself.
-
-**Parameters**
-
-**x,**: number, number to be squared
-
-**Returns**: number, squared
 
 combine(word1, word2)
 -----------------------------
