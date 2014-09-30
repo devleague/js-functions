@@ -1,7 +1,4 @@
-js-functions
-============
-
-Javascript Function Exercises
+#Javascript Function Exercises
 
 navigate to this project in your terminal  
 run `http-server`  
@@ -16,8 +13,6 @@ after you write each function:
 - reload [http://localhost:8000](http://localhost:8000) in chrome
 - check if your test passes.
 - if it passes, [commit your work](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository)
-
-
 
 ---
 
@@ -255,3 +250,7 @@ Use [Math.PI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 **radius**: number
 
 **Returns**: object, circle
+
+-----------------------------
+
+![js-functions](http://i.imgur.com/HmYgp37.jpg)
