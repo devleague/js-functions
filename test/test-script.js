@@ -230,20 +230,20 @@ describe("Main", function() {
   });
 
   describe("#incrementReviews", function() {
+    var awesomeEatery = incrementReviews({reviews: 1776});
+    var newEatery = incrementReviews({});
+
     it("should be a function", function() {
       (typeof window.incrementReviews).should.equal("function");
     });
 
-    it("should check if the restaurant object has a reviews property", function() {
-
+    it("should increment the reviews by 1, if property exists", function() {
+      expect(awesomeEatery.reviews).to.equal(1777);
     });
 
-    it("should increment the reviews by 1, if reviews property exists", function() {
-
-    });
-
-    it("should set the reviews to 1, if reviews property does not exist", function() {
-
+    it("should set the reviews to 1, if property does not exist", function() {
+      expect(newEatery).to.have.property("reviews");
+      expect(newEatery.reviews).to.equal(1);
     });
   });
 
@@ -264,12 +264,22 @@ describe("Main", function() {
   });
 
   describe("#createCircle", function() {
+    var radius = 4;
+    var circle = createCircle(radius);
+
     it("should be a function", function() {
       (typeof window.createCircle).should.equal("function");
     });
 
     it("should return a circle object with the properties circumference and area", function() {
-      
+      (typeof circle).should.equal("object");
+      circle.should.have.property("circumference");
+      circle.should.have.property("area");
+    });
+
+    it("should have the correct values for circumference and area", function() {
+      expect(circle.circumference).to.equal(2 * Math.PI * radius);
+      expect(circle.area).to.equal(Math.PI * radius * radius);
     });
   });
 });
