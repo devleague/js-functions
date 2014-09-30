@@ -10,6 +10,7 @@ Create 20 functions by following the comments in `functions.js`.
 *Write all of functions below in `functions.js`*
 
 After you write each function:
+
 1. Save `functions.js`.
 2. Reload [http://localhost:8000](http://localhost:8000) in Chrome.
 3. Check if your test passes.
