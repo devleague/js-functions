@@ -5,13 +5,13 @@
  */
 
 /**
- * Adds one to a given number
+ * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
 
 /**
- * Subtracts one from a given number
+ * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
@@ -51,8 +51,8 @@
  */
 
 /**
- * Prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
- * Returns the result.
+ * Performs a mathematical operation on two numbers.
+ * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
  * @param {string} operation "add", "subtract", "multiply", or "divide"
  * @param {number} x
  * @param {number} y
@@ -60,37 +60,37 @@
  */
 
 /**
- * Returns true if x is greater than y
- * @param {number} x
- * @param {number} y
- * @return {boolean} x is larger than y
+ * Returns true if `a` is greater than `b`.
+ * @param {number} a
+ * @param {number} b
+ * @return {boolean} `a` is larger than `b`
  */
 
 /**
- * Returns true if x is less than y
- * @param {number} x
- * @param {number} y
- * @return {boolean} x is smaller than y
+ * Returns true if `a` is less than `b`.
+ * @param {number} a
+ * @param {number} b
+ * @return {boolean} `a` is smaller than `b`
  */
 
 /**
- * Returns true if a and b are equal
- * @param {number} x
- * @param {number} y
+ * Returns true if `a` and `b` are equal.
+ * @param {number} a
+ * @param {number} b
  * @return {boolean} the numbers are equal
  */
 
 /**
  * Returns the smallest value of two numbers.
- * @param {number} a
- * @param {number} b
+ * @param {number} x
+ * @param {number} y
  * @return {number} the smallest number
  */
 
 /**
  * Returns the largest value of two numbers.
- * @param {number} a
- * @param {number} b
+ * @param {number} x
+ * @param {number} y
  * @return {number} the largest number
  */
 
@@ -119,7 +119,7 @@
  */
 
 /**
- * Checks if arestaurant` object has are `views` field.
+ * Checks if a `restaurant` object has are `views` field.
  * If it does, increase it by 1. If it does not,
  * set itsreviews` field to 1.
  * @param {object} restaurant represents a restaurant
@@ -133,7 +133,9 @@
  */
 
 /**
- * Returns a circle object with the properties `circumferance` and `area`.
+ * Returns a circle object with the properties `circumference` and `area`.
+ * Use Math.PI for the value π.
+ * (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI)
  * @param {number} radius
  * @return {object} circle
  */

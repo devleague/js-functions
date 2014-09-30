@@ -110,43 +110,43 @@ Returns the result.
 
 **Returns**: number, the result
 
-isGreaterThan(x, y)
+isGreaterThan(a, b)
 -----------------------------
-Returns true if x is greater than y
+Returns true if `a` is greater than `b`
 
 **Parameters**
 
-**x**: number
+**a**: number
 
-**y**: number
+**b**: number
 
-**Returns**: boolean, x is larger than y
+**Returns**: boolean, `a` is larger than `b`
 
-isLessThan(x, y)
+isLessThan(a, b)
 -----------------------------
-Returns true if x is less than y
+Returns true if `a` is less than `b`
 
 **Parameters**
 
-**x**: number
+**a**: number
 
-**y**: number
+**b**: number
 
-**Returns**: boolean, x is smaller than y
+**Returns**: boolean, `a` is smaller than `b`
 
-areEqual(x, y)
+areEqual(a, b)
 -----------------------------
-Returns true if a and b are equal
+Returns true if `a` and `b` are equal
 
 **Parameters**
 
-**x**: number
+**a**: number
 
-**y**: number
+**b**: number
 
 **Returns**: boolean, the numbers are equal
 
-minimum(a, b)
+minimum(x, y)
 -----------------------------
 Returns the smallest value of two numbers.
 
@@ -158,7 +158,7 @@ Returns the smallest value of two numbers.
 
 **Returns**: number, the smallest number
 
-maximum(a, b)
+maximum(x, y)
 -----------------------------
 Returns the largest value of two numbers.
 
@@ -233,6 +233,8 @@ Joins two strings with a space.
 createCircle(radius)
 -----------------------------
 Returns a circle object with the properties `circumferance` and `area`.
+
+Use [Math.PI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI) for the value π.
 
 **Parameters**
 
