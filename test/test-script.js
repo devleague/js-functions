@@ -18,14 +18,24 @@ describe("Main", function() {
   });
 
   describe("#numberToString", function() {
+    var stringNum;
+
     it("should be a function", function() {
       (typeof window.numberToString).should.equal("function");
     });
 
     it("should convert the given number to a string", function() {
-      expect(numberToString(5)).to.be.a("string");
-      expect(numberToString(-17/571)).to.be.a("string");
-      expect(numberToString(3.14159265359)).to.be.a("string");
+      stringNum = numberToString(5);
+      expect(stringNum).to.be.a("string");
+      expect(stringNum).to.equal("5");
+
+      stringNum = numberToString(-260/500);
+      expect(stringNum).to.be.a("string");
+      expect(stringNum).to.equal("-0.52");
+
+      stringNum = numberToString(3.14159265359);
+      expect(stringNum).to.be.a("string");
+      expect(stringNum).to.equal("3.14159265359");
     });
   });
 
