@@ -124,20 +124,31 @@ describe("Main", function() {
   });
 
   describe("#calculate", function() {
+    var add, subtract, multiply, divide;
+
     it("should be a function", function() {
       (typeof window.calculate).should.equal("function");
     });
 
     it("should print the equation to the console", function() {
-      calculate("add", 4, 7);
-      sinon.assert.calledOnce(console.log);
+      add = calculate("add", 4, 7);
+      sinon.assert.calledWithExactly(console.log, "4 + 7 = 11");
+
+      subtract = calculate("subtract", 4, 7);
+      sinon.assert.calledWithExactly(console.log, "4 - 7 = -3");
+
+      multiply = calculate("multiply", 8, 4);
+      sinon.assert.calledWithExactly(console.log, "8 * 4 = 32");
+
+      divide = calculate("divide", 8, 4);
+      sinon.assert.calledWithExactly(console.log, "8 / 4 = 2");
     });
 
     it("should return the result of the equation", function() {
-      expect(calculate("add", 4, 7)).to.equal(11);
-      expect(calculate("subtract", 4, 7)).to.equal(-3);
-      expect(calculate("multiply", 8, 4)).to.equal(32);
-      expect(calculate("divide", 8, 4)).to.equal(2);
+      expect(add).to.equal(11);
+      expect(subtract).to.equal(-3);
+      expect(multiply).to.equal(32);
+      expect(divide).to.equal(2);
     });
   });
 
@@ -149,7 +160,7 @@ describe("Main", function() {
     it("should return true if x is greater than y", function() {
       expect(isGreaterThan(7, 4)).to.equal(true);
       expect(isGreaterThan(-45, -31)).to.equal(false);
-      expect(isGreaterThan(0, -9)).to.equal(true);
+      expect(isGreaterThan(-9, -9)).to.equal(false);
     });
   });
 
@@ -161,7 +172,7 @@ describe("Main", function() {
     it("should return true if x is less than y", function() {
       expect(isLessThan(4, 7)).to.equal(true);
       expect(isLessThan(19, -31)).to.equal(false);
-      expect(isLessThan(0, 28)).to.equal(true);
+      expect(isLessThan(28, 28)).to.equal(false);
     });
   });
 
@@ -170,10 +181,13 @@ describe("Main", function() {
       (typeof window.areEqual).should.equal("function");
     });
 
-    it("should return true if a and b are equal", function() {
-      expect(areEqual(21, "21")).to.equal(false);
+    it("should return true if a and b have equal values and data types", function() {
       expect(areEqual(1, 1)).to.equal(true);
       expect(areEqual(-1/4, -0.25)).to.equal(true);
+    });
+
+    it("should return false if values are equal but data types are different", function() {
+      expect(areEqual(21, "21")).to.equal(false);
     });
   });
 
