@@ -254,18 +254,17 @@ describe("Main", function() {
   });
 
   describe("#incrementReviews", function() {
-    var awesomeEatery = incrementReviews({reviews: 1776});
-    var newEatery = incrementReviews({});
-
     it("should be a function", function() {
       (typeof window.incrementReviews).should.equal("function");
     });
 
     it("should increment the reviews by 1, if property exists", function() {
+      var awesomeEatery = incrementReviews({reviews: 1776});
       expect(awesomeEatery.reviews).to.equal(1777);
     });
 
     it("should set the reviews to 1, if property does not exist", function() {
+      var newEatery = incrementReviews({});
       expect(newEatery).to.have.property("reviews");
       expect(newEatery.reviews).to.equal(1);
     });
@@ -288,11 +287,15 @@ describe("Main", function() {
   });
 
   describe("#createCircle", function() {
-    var radius = 4;
-    var circle = createCircle(radius);
+    var radius, circle;
 
-    it("should be a function", function() {
-      (typeof window.createCircle).should.equal("function");
+    it("should be a function", function(done) {
+      setTimeout(function() {
+        (typeof window.createCircle).should.equal("function");
+        radius = 4;
+        circle = createCircle(radius);
+        done();
+      }, 1000);
     });
 
     it("should return a circle object with the properties circumference and area", function() {
