@@ -18,14 +18,12 @@ describe("Main", function() {
   });
 
   describe("#numberToString", function() {
-    var stringNum;
-
     it("should be a function", function() {
       (typeof window.numberToString).should.equal("function");
     });
 
     it("should convert the given number to a string", function() {
-      stringNum = numberToString(5);
+      var stringNum = numberToString(5);
       expect(stringNum).to.be.a("string");
       expect(stringNum).to.equal("5");
 
@@ -124,31 +122,29 @@ describe("Main", function() {
   });
 
   describe("#calculate", function() {
-    var add, subtract, multiply, divide;
-
     it("should be a function", function() {
       (typeof window.calculate).should.equal("function");
     });
 
     it("should print the equation to the console", function() {
-      add = calculate("add", 4, 7);
+      calculate("add", 4, 7);
       sinon.assert.calledWithExactly(console.log, "4 + 7 = 11");
 
-      subtract = calculate("subtract", 4, 7);
+      calculate("subtract", 4, 7);
       sinon.assert.calledWithExactly(console.log, "4 - 7 = -3");
 
-      multiply = calculate("multiply", 8, 4);
+      calculate("multiply", 8, 4);
       sinon.assert.calledWithExactly(console.log, "8 * 4 = 32");
 
-      divide = calculate("divide", 8, 4);
+      calculate("divide", 8, 4);
       sinon.assert.calledWithExactly(console.log, "8 / 4 = 2");
     });
 
     it("should return the result of the equation", function() {
-      expect(add).to.equal(11);
-      expect(subtract).to.equal(-3);
-      expect(multiply).to.equal(32);
-      expect(divide).to.equal(2);
+      expect(calculate("add", 4, 7)).to.equal(11);
+      expect(calculate("subtract", 4, 7)).to.equal(-3);
+      expect(calculate("multiply", 8, 4)).to.equal(32);
+      expect(calculate("divide", 8, 4)).to.equal(2);
     });
   });
 
