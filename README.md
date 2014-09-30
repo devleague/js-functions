@@ -3,7 +3,21 @@ js-functions
 
 Javascript Function Exercises
 
-Create 20 functions by following the comments in `functions.js`.
+navigate to this project in your terminal  
+run `http-server`  
+open [http://localhost:8000](http://localhost:8000) in chrome  
+*you should see failing tests*
+
+Create 20 functions by following the comments in `functions.js`.  
+*write all of functions below in `functions.js`*  
+
+after you write each function:
+- save `functions.js`
+- reload [http://localhost:8000](http://localhost:8000) in chrome
+- check if your test passes.
+- if it passes, [commit your work](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository)
+
+
 
 ---
 
