@@ -137,9 +137,10 @@
 
 /**
  * Checks if a `restaurant` object has a `reviews` field.
- * If it does, increase it by 1. If it does not,
- * set itsreviews` field to 1.
- * @param {object} restaurant represents a restaurant
+ * If it does, increase the `reviews` value by 1.
+ * If it does not, set the `reviews` value to 1.
+ * @param {object} restaurant   represents a restaurant object
+ * @return {object} restaurant
  */
 
 
