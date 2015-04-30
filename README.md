@@ -1,24 +1,19 @@
 #Javascript Function Exercises
 
-1. Navigate to this project in your terminal
-2. Run `http-server`
-3. Open [http://localhost:8000](http://localhost:8000) in Chrome
-
-*You should see failing tests.*
-
 Create 20 functions by following the comments in `functions.js`.
 *Write all of functions below in `functions.js`*
 
-After you write each function:
+## Getting Started
 
-1. Save `functions.js`.
-2. Reload [http://localhost:8000](http://localhost:8000) in Chrome.
-3. Check if your test passes.
-4. If it passes, [commit your work](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository).
+1. Clone this repository
+1. Install all dependencies by running the command: `npm install`
+1. Your work will be done in the file named: `functions.js`
+1. Run your tests with the command: `npm test`
+1. Your tests are broken, fix them!
 
 ---
 
-numberToString(n)
+numberToString(_Number_)
 -----------------------------
 Converts a number a string.
 

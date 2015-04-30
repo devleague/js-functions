@@ -136,8 +136,8 @@
 
 
 /**
- * Checks if a `restaurant` object has a `reviews` field.
- * If it does, increase the `reviews` value by 1.
+ * Checks if a `restaurant` object has a `reviews` property.
+ * If it does, increase the property's `reviews` value by 1.
  * If it does not, set the `reviews` value to 1.
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
