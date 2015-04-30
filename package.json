@@ -1,0 +1,27 @@
+{
+  "name": "js-functions",
+  "version": "0.0.2",
+  "description": "an exercise for building creating functions",
+  "main": "functions.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devleague/js-functions.git"
+  },
+  "author": "Dev League LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devleague/js-functions/issues"
+  },
+  "homepage": "https://github.com/devleague/js-functions",
+  "dependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1"
+  }
+}
