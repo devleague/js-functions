@@ -1,12 +1,19 @@
-var fs = require('fs');
-var vm = require('vm');
-var sinon = require('sinon');
-var chai = require('chai');
+var window = window || undefined;
+
+if (window) {
+  GLOBAL = window;
+} else {
+  var fs = require('fs');
+  var vm = require('vm');
+  var sinon = require('sinon');
+  var chai = require('chai');
+  var functionsFile = fs.readFileSync(process.cwd() + '/functions.js');
+  vm.runInThisContext(functionsFile); // file runs and it's contents has access to GLOBAL
+}
+
+
 var expect = chai.expect;
 var should = chai.should();
-
-var functionsFile = fs.readFileSync(process.cwd() + '/functions.js');
-vm.runInThisContext(functionsFile); // file runs and it's contents has access to GLOBAL
 
 describe("Main", function() {
   var sandbox;
