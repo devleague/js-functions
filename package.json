@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R spec ./test"
+    "test": "mocha --bail --watch"
   },
   "repository": {
     "type": "git",
