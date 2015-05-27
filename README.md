@@ -223,6 +223,8 @@ set its `reviews` field to 1.
 
 **restaurant**: object, represents a restaurant
 
+**Returns**: object, the modified object
+
 
 combine(word1, word2)
 -----------------------------
