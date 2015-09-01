@@ -1,14 +1,14 @@
 var window = window || undefined;
 
-if (window) {
+if ( !window ) {
   GLOBAL = window;
-} else {
-  var fs = require('fs');
-  var vm = require('vm');
+  var fs = require( 'fs' );
+  var vm = require( 'vm' );
   var sinon = require('sinon');
   var chai = require('chai');
   var functionsFile = fs.readFileSync(process.cwd() + '/functions.js');
-  vm.runInThisContext(functionsFile); // file runs and it's contents has access to GLOBAL
+  // file runs and it's contents has access to GLOBAL
+  vm.runInThisContext(functionsFile);
 }
 
 
