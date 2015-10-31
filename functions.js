@@ -4,12 +4,21 @@
  * @return {string} the number as a string
  */
 
+function numberToString(_Number_) {
+	var n = _Number_;
+	n = n.toString();
+	return n;
+}
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
+function increase(n){
+	return n + 1;
+}
+
 
 
 /**
@@ -17,7 +26,9 @@
  * @param {number} n
  * @return {number}
  */
-
+function decrease(n) {
+	return n - 1;
+}
 
 /**
  * Adds two numbers.
@@ -25,7 +36,9 @@
  * @param {number} y
  * @return {number} the sum
  */
-
+function add(x, y){
+	return x + y;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -33,7 +46,9 @@
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract(x, y) {
+	return x - y;
+}
 
 /**
  * Multiplies two numbers.
@@ -41,7 +56,9 @@
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(x, y) {
+	return x * y;
+}
 
 /**
  * Divides the first number by the second.
@@ -49,14 +66,18 @@
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divide(x, y) {
+	return x / y;
+}
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x){
+	return x * x;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -67,6 +88,24 @@
  * @return {number} the result
  */
 
+function calculate(operation, x, y) {
+	var result;
+	if (operation === "add") {
+			result = add(x, y);
+	} else if (operation === "subtract") {
+			result = subtract(x, y);
+	}
+	else if (operation === "multiply") {
+			result = multiply(x, y);
+	}
+	else if (operation === "divide") {
+			result = divide(x, y);
+	} else {
+		return false;
+	}
+
+	return result;
+} 
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -74,7 +113,11 @@
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan(a, b) {
+	if (a < b) {
+		return true;
+	}
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -82,7 +125,9 @@
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+// function isLessThan(a, b) {
+// 	if (a = b)
+// }
 
 /**
  * Returns true if `a` and `b` are equal.
