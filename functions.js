@@ -221,7 +221,8 @@ function isOdd (number) {
  if (number % 2 !== 0) {
   return true;
  }
- else {return false;
+ else {
+  return false;
  }
 }
 
@@ -266,20 +267,20 @@ function letterGrade (score, total) {
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-/*function incrementReviews (restaurant) {
+function incrementReviews (restaurant) {
 
-  var eatery = {
+  var myRestaurant = {
 
-    reviews: 0,
-    name: name,
-    location:
-  }
-  for (var i = 0; i < eatery; i++) {
-
-  }
-
-};*/
-
+    reviews: function () {
+    if (reviews > 0) {
+      return reviews +1;
+    } else if (reviews === 0) {
+      return reviews === 1;
+    }
+    }
+   };
+  return myRestaurant;
+}
 
 /**
  * Joins two strings with a space.
@@ -287,7 +288,13 @@ function letterGrade (score, total) {
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+function combine (word1, word2) {
 
+  var wordOneToStr = word1.toString();
+  var wordTwoToStr = word2.toString();
+
+  return wordOneToStr + " " + wordTwoToStr;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -296,4 +303,16 @@ function letterGrade (score, total) {
  * @param {number} radius
  * @return {object} circle
  */
+function createCircle (radius) {
+
+ var circumference = Math.PI * radius * 2;
+ var area = Math.PI * radius * radius;
+
+ var circleObj = {
+  circumference: circumference,
+  area: area
+ };
+ return circleObj;
+}
+
 
