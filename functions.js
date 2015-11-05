@@ -269,17 +269,12 @@ function letterGrade (score, total) {
  */
 function incrementReviews (restaurant) {
 
-  var myRestaurant = {
-
-    reviews: function () {
-    if (reviews > 0) {
-      return reviews +1;
-    } else if (reviews === 0) {
-      return reviews === 1;
-    }
-    }
-   };
-  return myRestaurant;
+  if (restaurant.hasOwnProperty('reviews')) {
+    restaurant.reviews += 1;
+  } else {
+    restaurant.reviews = 1;
+  }
+  return restaurant;
 }
 
 /**
