@@ -91,21 +91,26 @@ function square(x){
 function calculate(operation, x, y) {
 	var result;
 	if (operation === "add") {
-			result = add(x, y);
+			result = x + y;
+			console.log( x + " + " + y + " = " + result);
+			return result;
 	} else if (operation === "subtract") {
-			result = subtract(x, y);
+			result = x - y;
+			console.log( x + " - " + y + " = " + result);
+			return result;
 	}
 	else if (operation === "multiply") {
-			result = multiply(x, y);
+			result = x * y;
+			console.log( x + " * " + y + " = " + result);
+			return result;
 	}
 	else if (operation === "divide") {
-			result = divide(x, y);
-	} else {
-		return false;
+			result = x / y;
+			console.log( x + " / " + y + " = " + result);
+			return result;
 	}
-
-	return result;
-} 
+	return result;	 
+	} 
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -114,9 +119,7 @@ function calculate(operation, x, y) {
  * @return {boolean} `a` is larger than `b`
  */
 function isGreaterThan(a, b) {
-	if (a < b) {
-		return true;
-	}
+	return a > b;
 }
 
 /**
@@ -125,9 +128,9 @@ function isGreaterThan(a, b) {
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-// function isLessThan(a, b) {
-// 	if (a = b)
-// }
+function isLessThan(a,b) {
+	return a < b;
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -135,6 +138,9 @@ function isGreaterThan(a, b) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+function areEqual(a,b){
+		return a === b;
+}
 
 
 /**
@@ -143,7 +149,10 @@ function isGreaterThan(a, b) {
  * @param {number} y
  * @return {number} the smallest number
  */
-
+ function minimum(x, y) {
+ 	var z = Math.min(x, y);
+ 		return z;
+ }
 
 /**
  * Returns the largest value of two numbers.
@@ -151,6 +160,10 @@ function isGreaterThan(a, b) {
  * @param {number} y
  * @return {number} the largest number
  */
+function maximum(x,y){
+	var z = Math.max(x,y);
+		return z;
+}
 
 
 /**
@@ -158,14 +171,18 @@ function isGreaterThan(a, b) {
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+function isEven(n) {
+	return n % 2 === 0; 
+}
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n){
+	return !isEven(n);
+}
 
 /**
  * Returns a letter grade.
@@ -178,7 +195,25 @@ function isGreaterThan(a, b) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-
+function letterGrade(score, total) {
+		var percentage = (score/total) * 100;
+			if (percentage >= 90 && percentage <= 100) {
+			return "A";
+		}
+		if (percentage >= 80 && percentage < 90) {
+			return "B";
+		}
+		if (percentage >=  70 && percentage < 80) {
+			return "C";
+		}
+		if (percentage >= 60 && percentage < 70) {
+			return "D";
+		}
+		if (percentage >= 0 && percentage < 60) {
+			return "F";
+		}
+	return 'grade';
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -188,6 +223,9 @@ function isGreaterThan(a, b) {
  * @return {object} restaurant
  */
 
+function incrementReviews(restaurant){
+			
+}
 
 /**
  * Joins two strings with a space.
@@ -196,6 +234,11 @@ function isGreaterThan(a, b) {
  * @return {string} joined the words joined with a space
  */
 
+function combine(word1, word2) {
+		var str1 = "word1";
+		var str2 = "word2";
+		var res = str1.concat(str2);
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
