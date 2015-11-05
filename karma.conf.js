@@ -3,7 +3,7 @@ module.exports = function (config) {
       basePath: '',
       frameworks: ['mocha', 'chai', 'sinon', 'sinon-chai'],
       files: [
-        'test/*.spec.js',
+        'test/specs/*.spec.js',
         'functions.js'
       ],
       reporters: ['progress'],

@@ -1,22 +1,5 @@
-var expect = chai.expect;
-var should = chai.should();
-
 describe("Main", function() {
   var sandbox;
-
-  beforeEach(function() {
-    // create a sandbox
-    sandbox = sinon.sandbox.create();
-
-    // stub some console methods
-    sandbox.stub(console, "log");
-    sandbox.stub(console, "error");
-  });
-
-  afterEach(function() {
-    // restore the environment as it was before
-    sandbox.restore();
-  });
 
   describe("#numberToString", function() {
     it("should be a function", function() {
