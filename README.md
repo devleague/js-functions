@@ -5,11 +5,13 @@ Create 20 functions by following the comments in `functions.js`.
 
 ## Getting Started
 
-1. Clone this repository and change your current working directory to this repository
+1. Clone this repository and change your current working directory to this repository.
 1. Install all dependencies by running the command: `npm install`
+1. Run the command `http-server` and then visit `http://localhost:8080` to see all the failing tests.
 1. Your work will be done in the file named: `functions.js`
-1. Run your tests with the command: `npm test`
 1. Your tests are broken, fix them!
+1. Refresh the page to see passing tests.
+1. Repeat steps 5 and 6 until all tests pass.
 
 ---
 
