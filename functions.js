@@ -1,162 +1,164 @@
 /**
- * Converts a number a string.
- * @param {number} n
- * @return {string} the number as a string
+ * Function name: numberToString - Converts a number to a string
+ * @param  {type: Number} n
+ * @return {type: String}
  */
 
 
 /**
- * Adds one to a given number.
- * @param {number} n
- * @return {number}
+ * Function name: increase - Adds one to a given number.
+ * @param {type: Number} n
+ * @return {type: Number}
  */
 
 
 /**
- * Subtracts one from a given number.
- * @param {number} n
- * @return {number}
+ * Function name: decrease - Subtracts one from a given number.
+ * @param {type: Number} n
+ * @return {type: Number}
  */
 
 
 /**
- * Adds two numbers.
- * @param {number} x
- * @param {number} y
- * @return {number} the sum
+ * Function name: add - Adds two numbers together and returns the sum.
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number}
  */
 
 
 /**
- * Subtracts the second number from the first.
- * @param {number} x
- * @param {number} y
- * @return {number} the difference
+ * Function name: subtract - Subtracts the second number from the first and returns the result.
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number}
  */
 
 
 /**
- * Multiplies two numbers.
- * @param {number} x
- * @param {number} y
- * @return {number} the product
+ * Function name: multiply - Multiplies two numbers and returns the product.
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number}
  */
 
 
 /**
- * Divides the first number by the second.
- * @param {number} x
- * @param {number} y
- * @return {number} the quotient
+ * Function name: divide - Divides the first number by the second and returns the remainder.
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number}
  */
 
 
 /**
- * Multiplies a number by itself.
- * @param {number} x, number to be squared
- * @return {number} squared
+ * Function name: square - Multiplies a number by itself and returns the new value.
+ * @param {type: Number} x, number to be squared
+ * @return {type: Number}
  */
 
 
 /**
- * Performs a mathematical operation on two numbers.
+ * Function name: calculate - Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
- * @param {string} operation "add", "subtract", "multiply", or "divide"
- * @param {number} x
- * @param {number} y
- * @return {number} the result
+ * @param {type: String} operation "add", "subtract", "multiply", or "divide"
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number}
  */
 
 
 /**
- * Returns true if `a` is greater than `b`.
- * @param {number} a
- * @param {number} b
- * @return {boolean} `a` is larger than `b`
+ * Function name: isGreaterThan - Determines if a number is larger than given value.
+ * @param {type: Number} a
+ * @param {type: Number} b
+ * @return {type: Boolean} return `true` if the first number given is larger than the second. Otherwise returns `false`.
  */
 
 
 /**
- * Returns true if `a` is less than `b`.
- * @param {number} a
- * @param {number} b
- * @return {boolean} `a` is smaller than `b`
+ * Function name: isLessThan - Determines if a number is smaller than given value.
+ * @param {type: Number} a
+ * @param {type: Number} b
+ * @return {type: Boolean} return `true` if the first number given is larger than the second. Otherwise returns `false`.
  */
 
 
 /**
- * Returns true if `a` and `b` are equal.
- * @param {number} a
- * @param {number} b
- * @return {boolean} the numbers are equal
+ * Function name: areEqual - Determines if values given are equal to one another.
+ * @param {type: Number} a
+ * @param {type: Number} b
+ * @return {type: Boolean}
  */
 
 
 /**
- * Returns the smallest value of two numbers.
- * @param {number} x
- * @param {number} y
- * @return {number} the smallest number
+ * Function name: minimum - Returns the smallest value of two numbers.
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number} the smallest number
  */
 
 
 /**
- * Returns the largest value of two numbers.
- * @param {number} x
- * @param {number} y
- * @return {number} the largest number
+ * Function name: maximum - Returns the largest value of two numbers.
+ * @param {type: Number} x
+ * @param {type: Number} y
+ * @return {type: Number} the largest number
  */
 
 
 /**
- * Returns true if `n` is even.
- * @param {number} n
- * @return {boolean} the number is even
+ * Function name: isEven - Determines whether or not a given value is even.
+ * @param {type: Number} n
+ * @return {type: Boolean} return `true` if the number given is even. Otherwise returns `false`.
  */
 
 
 /**
- * Returns true if `n` is odd.
- * @param {number} n
- * @return {boolean} the number is odd
+ * Function name: isOdd - Determines whether or not a given value is odd.
+ * @param {type: Number} n
+ * @return {type: Boolean} return `true` if the number given is odd. Otherwise return `false`.
  */
 
 
 /**
- * Returns a letter grade.
+ * Function name: letterGrade - Returns a letter grade based on the given score and max score possible.
  * "A": 90-100%
  * "B": 80-89%
  * "C": 70-79%
  * "D": 60-69%
  * "F": 0-59%
- * @param {number} score
- * @param {number} total maximum possible score
- * @return {string} the score represented as a letter grade
+ * @param {type: Number} score
+ * @param {type: Number} total maximum possible score
+ * @return {type: String} the score represented as a letter grade
  */
 
 
 /**
- * Checks if a `restaurant` object has a `reviews` property.
+ * Function name: incrementReviews - Checks if a `restaurant` object has a property named `reviews`.
  * If it does, increase the property's `reviews` value by 1.
  * If it does not, set the `reviews` value to 1.
- * @param {object} restaurant   represents a restaurant object
- * @return {object} restaurant
+ * @param {type: Object} restaurant   represents a restaurant object
+ * @return {type: Object} the resturant that was given.
  */
 
 
 /**
- * Joins two strings with a space.
- * @param {string} word1
- * @param {string} word2
- * @return {string} joined the words joined with a space
+ * Function name: combine - Joins two strings with a space.
+ * @param {type: String} word1
+ * @param {type: String} word2
+ * @return {type: String} joined the words joined with a space
  */
 
 
 /**
- * Returns a circle object with the properties `circumference` and `area`.
+ * Function name: createCircle - Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
+ *
  * (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI)
- * @param {number} radius
- * @return {object} circle
+ *
+ * @param {type: Number} radius
+ * @return {type: Object} circle
  */
 
