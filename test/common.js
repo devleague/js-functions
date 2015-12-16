@@ -16,6 +16,13 @@ global.assert = chai.assert;
 global.expect = chai.expect;
 chai.should();
 
+// load file into global environment for test
+// this only runs when mocha is called from the commandline
+var fs = require('fs');
+var vm = require('vm');
+var functionsFile = fs.readFileSync(process.cwd() + '/functions.js');
+vm.runInThisContext(functionsFile); // file runs and it's contents has access to GLOBAL
+
 /**
  * The following line will display the mocha stack trace if uncommented.
  */
