@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/devleague/js-functions",
   "devDependencies": {
-    "chai": "^2.3.0",
+    "chai": "^3.5.0",
     "karma": "^0.13.14",
     "karma-chai": "^0.1.0",
     "karma-cli": "^0.1.1",
