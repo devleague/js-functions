@@ -51,6 +51,10 @@ function runAfterTests() {
    * third parameter called `glue` (a string value).
    */
 
+   function improvedCombine(word1, word2, glue) {
+     return word1 + glue + word2;
+   }
+
   // What happens if you were to uncomment the following lines?
 
   // combine = improvedCombine;
