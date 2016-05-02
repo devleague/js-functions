@@ -6,7 +6,7 @@
 function numberToString(Number) {
   return Number.toString();
 }
-
+console.log(numberToString(11));
 /**
  * Adds one to a given number.
  * @param {number} n
@@ -15,6 +15,7 @@ function numberToString(Number) {
 function increase(n) {
   return n += 1;
 }
+console.log(increase(99));
 /**
  * Subtracts one from a given number.
  * @param {number} n
@@ -23,7 +24,7 @@ function increase(n) {
 function decrease(n) {
   return n -= 1;
 }
-
+console.log(decrease(101));
 /**
  * Adds two numbers.
  * @param {number} x
@@ -33,7 +34,7 @@ function decrease(n) {
 function add(x,y) {
   return x + y;
 }
-
+console.log(add(834012385237430, 348791598));
 /**
  * Subtracts the second number from the first.
  * @param {number} x
@@ -43,7 +44,7 @@ function add(x,y) {
 function subtract(x,y) {
   return x - y;
 }
-
+console.log(subtract(122, 24));
 /**
  * Multiplies two numbers.
  * @param {number} x
@@ -53,7 +54,7 @@ function subtract(x,y) {
 function multiply(x,y) {
   return x * y;
 }
-
+console.log(483908423, 4621434915208941);
 /**
  * Divides the first number by the second.
  * @param {number} x
@@ -63,7 +64,7 @@ function multiply(x,y) {
 function divide(x,y) {
   return x / y;
 }
-
+console.log(divide(804684560, 22));
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
@@ -72,7 +73,7 @@ function divide(x,y) {
 function square(x) {
   return x * x;
 }
-
+console.log(square(454156));
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -83,24 +84,25 @@ function square(x) {
  */
 function calculate(operation, x,y) {
   if (operation === 'add') {
-      var sum = x + y;
+      var sum = add(x,y);
       console.log(x + ' + ' + y + ' = ' + sum);
       return sum;
   } else if (operation === 'subtract'){
-      var diff = x - y;
+      var diff = subtract(x,y);
       console.log(x + ' - ' + y + ' = ' + diff);
       return diff;
   } else if (operation === 'multiply') {
-      var prod = x * y;
+      var prod = multiply(x,y);
       console.log(x + ' * ' + y + ' = ' + prod);
       return prod;
   } else if (operation === 'divide') {
-      var quo = x / y;
+      var quo = divide(x,y);
       console.log(x + ' / ' + y + ' = ' + quo);
       return quo;
   }
 }
-
+var whatDo = 'divide';
+console.log(calculate(whatDo, 25767, 564));
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
@@ -114,7 +116,7 @@ function isGreaterThan(a, b) {
     return false;
   }
 }
-
+console.log(isGreaterThan(2456, 1));
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
@@ -128,7 +130,7 @@ function isLessThan(a, b) {
     return false;
   }
 }
-
+console.log(isLessThan(245845765187, 7));
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
@@ -142,7 +144,7 @@ function areEqual(a, b) {
     return false;
   }
 }
-
+console.log(areEqual(12, 12));
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
@@ -152,6 +154,7 @@ function areEqual(a, b) {
 function minimum(x, y) {
   return Math.min(x, y);
 }
+console.log(minimum(12556, 1456));
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
@@ -161,7 +164,7 @@ function minimum(x, y) {
 function maximum(x, y) {
   return Math.max(x, y);
 }
-
+console.log(maximum(456, 468732));
 /**
  * Returns true if `n` is even.
  * @param {number} n
@@ -174,7 +177,7 @@ function isEven(n) {
   return false;
   }
 }
-
+console.log(isEven(4214));
 /**
  * Returns true if `n` is odd.
  * @param {number} n
@@ -187,7 +190,7 @@ function isOdd(n) {
   return false;
   }
 }
-
+console.log(isOdd(4128971));
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -199,8 +202,24 @@ function isOdd(n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function letterGrade(score, total) {
+  var percent = score / total;
+    if (percent >= 0.9) {
+      return 'A';
+    } else if (percent >= 0.8) {
+      return 'B';
+    } else if (percent >= 0.7) {
+      return 'C';
+    } else if (percent >= 0.6) {
+      return 'D';
+    } else {
+      return 'F';
+    }
 
-
+}
+var score = 9;
+var total = 100;
+console.log(letterGrade(score, total));
 /**
  * Checks if a `restaurant` object has a `reviews` property.
  * If it does, increase the property's `reviews` value by 1.
@@ -208,16 +227,29 @@ function isOdd(n) {
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-
-
+function incrementReviews(restaurant) {
+  if (restaurant.hasOwnProperty('reviews')){
+    restaurant.reviews++;
+    return restaurant;
+  } else {
+    restaurant.reviews = 1;
+    return restaurant;
+  }
+}
+var badDiner = {
+  reviews: 2
+};
+console.log(incrementReviews(badDiner.reviews));
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
-
+function combine(word1, word2) {
+  return word1 + ' ' + word2;
+}
+console.log('lol', 'hax');
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
@@ -226,3 +258,11 @@ function isOdd(n) {
  * @return {object} circle
  */
 
+function createCircle(radius) {
+  circle = {
+    circumference: 2 * radius * Math.PI,
+    area: Math.PI * radius * radius
+  };
+  return circle;
+}
+console.log(createCircle(20));
