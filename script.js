@@ -29,8 +29,10 @@ function runAfterTests() {
    * Did you try to use those functions _inside_ of `calculate`?
    * If you didn't go back and try it, this is called "reusability"!
    */
+   // Yes! I did notice and used those functions in my "calculate" function.
 
-  // Do you see any other functions where code could be reused?
+  //Do you see any other functions where code could be reused?
+  //I reused the "divide" function in "letterGrade" and reused the "square" function in "createCircle".
 
   /**
    * For your `letterGrade` function,
