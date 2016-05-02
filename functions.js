@@ -89,7 +89,25 @@ function square(x) {
  * @param {number} y
  * @return {number} the result
  */
-
+function calculate(operation,x,y) {
+  if (operation === "add"){
+    var sum = add(x,y);
+    console.log(x + " + " + y + " = " + sum);
+    return sum;
+  }else if(operation === "subtract"){
+    var difference = subtract(x,y);
+    console.log(x + " - " + y + " = " + difference);
+    return difference;
+  }else if(operation === "multiply"){
+    var product = multiply(x,y);
+    console.log(x + " * " + y + " = " + product);
+    return product;
+  }else if(operation === "divide"){
+    var quotient = divide(x,y);
+    console.log(x + " / " + y + " = " + quotient);
+    return quotient;
+  }
+}
 
 /**
  * Returns true if `a` is greater than `b`.
