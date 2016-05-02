@@ -13,7 +13,8 @@
  * @return {number}
  */
 function increase(n) {
-  return n = n + 1;
+  n++;
+  return n;
 }
 
 /**
