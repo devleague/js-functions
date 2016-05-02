@@ -21,6 +21,7 @@ function runAfterTests() {
    * what value will you get back? Why is that?
    */
    console.log(areEqual(myNumber,stringValue));
+   //The result is false. Although the values are the same, the data types are different and the function compares using strict equality.
 
   /**
    * You may have noticed that the `calculate` function combined
