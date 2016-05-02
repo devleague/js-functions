@@ -57,6 +57,7 @@ function runAfterTests() {
 
   // What happens if you were to uncomment the following lines?
 
-  // combine = improvedCombine;
-  // console.log(combine('combine', 'improved!', ' is '));
+  combine = improvedCombine;
+  console.log(combine('combine', 'improved!', ' is '));
+  console.log("The function 'combine' has been replaced by 'improvedCombine' and now uses any string to combine two strings.");
 }
