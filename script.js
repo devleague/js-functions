@@ -13,6 +13,8 @@ function runAfterTests() {
    * Assign it the value that's returned when you pass
    * `myNumber into the function `numberToString`.
    */
+   var stringValue = numberToString(myNumber);
+   console.log(stringValue);
 
   /**
    * If you pass `myNumber` and `stringValue` into `areEqual`,
