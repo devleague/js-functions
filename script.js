@@ -6,6 +6,7 @@ function runAfterTests() {
    */
 
   // Create a variable called `myNumber`, and assign it to any number
+  var myNumber = 2;
 
   /**
    * Create another variable called `stringValue`.
