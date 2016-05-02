@@ -107,7 +107,13 @@ function calculate(operation, x,y) {
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan(a, b) {
+  if (a > b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -115,7 +121,13 @@ function calculate(operation, x,y) {
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan(a, b) {
+  if (a < b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -123,7 +135,13 @@ function calculate(operation, x,y) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -131,29 +149,44 @@ function calculate(operation, x,y) {
  * @param {number} y
  * @return {number} the smallest number
  */
-
-
+function minimum(x, y) {
+  return Math.min(x, y);
+}
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
-
+function maximum(x, y) {
+  return Math.max(x, y);
+}
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+function isEven(n) {
+  if (n % 2 === 0) {
+    return true;
+  } else {
+  return false;
+  }
+}
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n) {
+  if (n % 2 !== 0) {
+    return true;
+  } else {
+  return false;
+  }
+}
 
 /**
  * Returns a letter grade.
