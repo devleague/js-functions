@@ -20,6 +20,7 @@ function runAfterTests() {
    * If you pass `myNumber` and `stringValue` into `areEqual`,
    * what value will you get back? Why is that?
    */
+   console.log(areEqual(myNumber,stringValue));
 
   /**
    * You may have noticed that the `calculate` function combined
