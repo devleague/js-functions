@@ -33,7 +33,10 @@ function decrease(n) {
  * @param {number} y
  * @return {number} the sum
  */
-
+function add(x,y) {
+  var sum = x + y;
+  return sum;
+}
 
 /**
  * Subtracts the second number from the first.
