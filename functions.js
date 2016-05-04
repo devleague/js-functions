@@ -174,6 +174,11 @@ function isEven(n){
  * @return {boolean} the number is odd
  */
 
+function isOdd(n){
+	if(n % 1 === 0){
+		return true;
+	}
+}
 
 /**
  * Returns a letter grade.
