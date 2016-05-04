@@ -126,6 +126,13 @@ function isLessThan(a,b){
  * @return {boolean} the numbers are equal
  */
 
+function areEqual(a,b){
+	if(a===b){
+		return true;
+	}else{
+		return false;
+	}
+}
 
 /**
  * Returns the smallest value of two numbers.
