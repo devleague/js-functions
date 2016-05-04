@@ -4,9 +4,8 @@
  * @return {string} the number as a string
  */
 
-function numberToString() {
-	var num=5;
-	return num;
+function numberToString(_Number_){
+	return _Number_;
 }
 
 /**
@@ -95,6 +94,8 @@ function square(x){
  * @return {number} the result
  */
 
+function calculate(operation,x,y){
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -103,6 +104,9 @@ function square(x){
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan(a,b){
+	return a>b;
+}
 
 /**
  * Returns true if `a` is less than `b`.
