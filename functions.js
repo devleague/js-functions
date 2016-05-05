@@ -261,7 +261,7 @@ console.log('lol', 'hax');
 function createCircle(radius) {
   circle = {
     circumference: 2 * radius * Math.PI,
-    area: Math.PI * radius * radius
+    area: Math.PI * square(radius)
   };
   return circle;
 }
