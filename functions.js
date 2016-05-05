@@ -86,22 +86,22 @@ function square(x) {
  */
  function calculate(operation, x ,y) {
   if(operation == "add") {
-    var sum = x + y;
+    var sum = add(x, y);
     console.log(x + " + " + y + " = " + sum);
     return sum;
   }
   else if(operation == "subtract") {
-    var difference = x - y;
+    var difference = subtract(x, y);
     console.log(x + " - " + y + " = " + difference);
     return difference;
   }
   else if(operation == "multiply") {
-    var product = x * y;
+    var product = multiply(x, y);
     console.log(x + " * " + y + " = " + product);
     return product;
   }
   else if(operation == "divide") {
-    var quotient = x / y;
+    var quotient = divide(x, y);
     console.log(x + " / " + y + " = " + quotient);
     return quotient;
   }
