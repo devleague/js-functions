@@ -98,6 +98,12 @@ function square(x){
  */
 
 function calculate(operation,x,y){
+	operation = {
+		add : x+y,
+		subtract : x-y,
+		multiply : x*y
+	};
+	return operation;
 }
 
 /**
@@ -196,7 +202,6 @@ function isOdd(n){
  */
 
 function letterGrade(score,total){
-	char = total;
 	if(score>=90){
 		total = 'A';
 	}else if(score>=89){
@@ -219,6 +224,15 @@ function letterGrade(score,total){
  * @return {object} restaurant
  */
 
+function incrementReviews(restaurant){
+	var menu = restaurant.reviews;
+	if(restaurant==menu){
+		return restaurant++;
+	}else{
+		return restaurant.objectProperty(menu);
+	}
+}
+
 
 /**
  * Joins two strings with a space.
@@ -227,6 +241,10 @@ function letterGrade(score,total){
  * @return {string} joined the words joined with a space
  */
 
+
+function combine(word1,word2){
+	return word1 + " " + word2;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
