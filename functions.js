@@ -5,8 +5,11 @@
  */
 
 function numberToString(_Number_){
-	return _Number_;
+	var num = _Number_.toString();
+	return num;
+
 }
+console.log(numberToString(5));
 
 /**
  * Adds one to a given number.
@@ -192,6 +195,21 @@ function isOdd(n){
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score,total){
+	char = total;
+	if(score>=90){
+		total = 'A';
+	}else if(score>=89){
+		total = 'B';
+	}else if(score>=79){
+		total = 'C';
+	}else if(score>=69){
+		total = 'D';
+	}else if(score>=0){
+		total ='F';
+	}
+	return total;
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
