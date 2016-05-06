@@ -7,16 +7,30 @@ function runAfterTests() {
 
   // Create a variable called `myNumber`, and assign it to any number
 
+  var myNumber = 777;
+
   /**
    * Create another variable called `stringValue`.
    * Assign it the value that's returned when you pass
    * `myNumber into the function `numberToString`.
    */
 
+   function numberToStrimg (myNumber) {
+    var stringValue = numberToStrimg.myNumber;
+   }
+
   /**
    * If you pass `myNumber` and `stringValue` into `areEqual`,
    * what value will you get back? Why is that?
    */
+
+function areEqual (myNumber , stringValue) {
+  if (myNumber === stringValue) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
   /**
    * You may have noticed that the `calculate` function combined

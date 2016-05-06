@@ -4,6 +4,9 @@
  * @return {string} the number as a string
  */
 
+function numberToString (number) {
+	return number.toString();
+}
 
 /**
  * Adds one to a given number.
@@ -11,6 +14,9 @@
  * @return {number}
  */
 
+function increase (n) {
+	return n + 1;
+}
 
 /**
  * Subtracts one from a given number.
@@ -18,6 +24,9 @@
  * @return {number}
  */
 
+function decrease (n) {
+	return n - 1;
+}
 
 /**
  * Adds two numbers.
@@ -26,6 +35,9 @@
  * @return {number} the sum
  */
 
+function add (x , y) {
+	return x + y;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -34,6 +46,9 @@
  * @return {number} the difference
  */
 
+function subtract (x , y) {
+	return x - y;
+}
 
 /**
  * Multiplies two numbers.
@@ -42,6 +57,9 @@
  * @return {number} the product
  */
 
+function multiply (x , y) {
+	return x * y;
+}
 
 /**
  * Divides the first number by the second.
@@ -50,6 +68,9 @@
  * @return {number} the quotient
  */
 
+function divide (x , y) {
+	return x / y;
+}
 
 /**
  * Multiplies a number by itself.
@@ -57,6 +78,9 @@
  * @return {number} squared
  */
 
+function square (x) {
+	return x * x;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -67,6 +91,9 @@
  * @return {number} the result
  */
 
+function calculate (operation , x , y) {
+
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -75,6 +102,13 @@
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan (a , b) {
+	if (a > b) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -83,6 +117,13 @@
  * @return {boolean} `a` is smaller than `b`
  */
 
+function isLessThan (a ,b) {
+	if (a < b) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -91,6 +132,13 @@
  * @return {boolean} the numbers are equal
  */
 
+function areEqual (a , b) {
+	if (a === b) {
+		return true;
+	} else {
+		return false;
+	}
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -99,7 +147,11 @@
  * @return {number} the smallest number
  */
 
-
+function minimum (x , y) {
+	if (x > y) {
+		return y; 
+	} 
+}
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
@@ -107,6 +159,11 @@
  * @return {number} the largest number
  */
 
+function maximum (x , y) {
+	if (x < y) {
+		return y;
+	}
+}
 
 /**
  * Returns true if `n` is even.
@@ -114,6 +171,11 @@
  * @return {boolean} the number is even
  */
 
+function isEven (n) {
+	if (n % 2 === 0) {
+		return true;
+	}
+}
 
 /**
  * Returns true if `n` is odd.
@@ -121,6 +183,11 @@
  * @return {boolean} the number is odd
  */
 
+function isOdd (n) {
+	if (n % 2 !==0) {
+		return true;
+	}
+}
 
 /**
  * Returns a letter grade.
@@ -134,6 +201,19 @@
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade (score, total) {
+	if (score >= 90 && score <= total) {
+		return 'A';
+	} else if (score >= 80 && score < 90) {
+		return 'B';
+	} else if (score >= 70 && score < 80) {
+		return 'C';
+	} else if (score >= 60 && score < 70) {
+		return 'D';
+	} else if (score >= 0 && grade < 60) {
+		return 'F';
+	} 
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -143,6 +223,14 @@
  * @return {object} restaurant
  */
 
+function incrementReviews (restaurant) {
+	var restaurantReviews = restaurant.reviews;
+	if (restaurant = restaurant.reviews) {
+		return restaurant.reviews + 1;
+	} else {
+		return restaurant;
+	}
+}
 
 /**
  * Joins two strings with a space.
@@ -151,6 +239,9 @@
  * @return {string} joined the words joined with a space
  */
 
+function combine (word1 , word2) {
+	return word1 + ' ' + word2;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -159,4 +250,8 @@
  * @param {number} radius
  * @return {object} circle
  */
+
+function createCircle (radius) {
+
+}
 
