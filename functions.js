@@ -160,7 +160,7 @@ function minimum(a,b){
  * @param {number} y
  * @return {number} the smallest number
  */
-function maximum(a,b){
+function minimum(a,b){
   if(a > b)
     return b;
   else
