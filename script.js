@@ -282,7 +282,8 @@ console.log(areEqual(myNumber,stringValue));
    */
 
   // Do you see any other functions where code could be reused?
-
+  
+  // Increase in resteraunt, minimum and maximum in letter grade
   /**
    * Your `combine` function looks okay,
    * but what if you wanted to join it with ANY string instead of a single space?
@@ -299,3 +300,4 @@ console.log(areEqual(myNumber,stringValue));
  combine = improvedCombine;
   console.log(combine('combine', 'improved!', ' is '));
 }
+// returns a error saying combine is a function.
