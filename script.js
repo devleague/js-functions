@@ -29,11 +29,11 @@ function runAfterTests() {
    * Did you try to use those functions _inside_ of `calculate`?
    * If you didn't go back and try it, this is called "reusability"!
    */
-	var calculatedValue = calculate('add',myNumber,8);
+	var calculatedValue = calculate('add',add(8,2),myNumber);
 	console.log(calculatedValue);
 
   // Do you see any other functions where code could be reused?
-	// add, subtract, multiply, divide, square, increase, decrease
+	//basically all the other functions? (except incrementReviews and combine)
   /**
    * For your `letterGrade` function,
    * what happens if you provide a `score` that is less than 0,
