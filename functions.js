@@ -7,6 +7,8 @@
 function numberToString(_Number_){
 	var num = _Number_.toString();
 	return num;
+	// return number.toString();
+	// return "" + number;
 
 }
 console.log(numberToString(5));
@@ -20,6 +22,8 @@ console.log(numberToString(5));
  function increase(n){
  	n+=1;
  	return n;
+ 	// return n+1
+ 	// return ++n;
  }
 
 
@@ -32,6 +36,8 @@ console.log(numberToString(5));
 function decrease(n){
 	n-=1;
 	return n;
+	// returnn-1;
+	// return --n;
 }
 
 /**
@@ -98,12 +104,8 @@ function square(x){
  */
 
 function calculate(operation,x,y){
-	operation = {
-		add : x+y,
-		subtract : x-y,
-		multiply : x*y
-	};
-	return operation;
+	// var result;
+	// if(operation === 'add')
 }
 
 /**
@@ -172,6 +174,7 @@ function maximum(x,y){
  */
 
 function isEven(n){
+	// return (n % 2 === 0);
 	if(n % 2 === 0){
 		return true;
 	}
@@ -184,6 +187,8 @@ function isEven(n){
  */
 
 function isOdd(n){
+	// return (n % 2 === 1);
+	// return !isEven(n);
 	if(n % 1 === 0){
 		return true;
 	}
@@ -202,18 +207,24 @@ function isOdd(n){
  */
 
 function letterGrade(score,total){
-	if(score>=90){
-		total = 'A';
-	}else if(score>=89){
-		total = 'B';
-	}else if(score>=79){
-		total = 'C';
-	}else if(score>=69){
-		total = 'D';
-	}else if(score>=0){
-		total ='F';
+	var grade = (score/total)*100;
+	if(grade>=90){
+		return "A";
+	}else{
+		if(grade>=80){
+			return "B";
+		}else{
+			if(grade>=70){
+				return "C";
+			}else{
+				if(grade>=60){
+					return "D";
+				}
+					 return "F";
+			}
+		}
 	}
-	return total;
+	return grade;
 }
 
 /**
@@ -226,11 +237,12 @@ function letterGrade(score,total){
 
 function incrementReviews(restaurant){
 	var menu = restaurant.reviews;
-	if(restaurant==menu){
-		return restaurant++;
+	if(!menu){
+		restaurant.reviews = 1;
 	}else{
-		return restaurant.objectProperty(menu);
+		restaurant.reviews = increase(restaurant.reviews);
 	}
+	return restaurant;
 }
 
 
@@ -243,6 +255,7 @@ function incrementReviews(restaurant){
 
 
 function combine(word1,word2){
+	// return [word1,word2].join(' ');
 	return word1 + " " + word2;
 }
 
