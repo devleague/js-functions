@@ -103,9 +103,32 @@ function square(x){
  * @return {number} the result
  */
 
+// var sum = add(x,y);
+// var difference = subtract(x,y);
+// var multResult = multiply;
+// var divResult = divide;
+
 function calculate(operation,x,y){
-	// var result;
-	// if(operation === 'add')
+	if(operation === "add"){
+		var sum = x + y;
+		console.log(x + " + " + y + " = " + sum);
+		return sum;
+	}
+	if(operation === "subtract"){
+		var difference = x - y;
+		console.log(x + " - " + y + " = " + difference);
+		return difference;
+	}
+	if(operation === "multiply"){
+		var product = x * y;
+		console.log(x + " * " + y + " = " + product);
+		return product;
+	}
+	if(operation === "divide"){
+		var quotient = x / y;
+		console.log(x + " / " + y + " = " + quotient);
+		return quotient;
+	}
 }
 
 /**
