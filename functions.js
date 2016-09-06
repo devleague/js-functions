@@ -4,7 +4,6 @@
  * @return {string} the number as a string
  */
 
-
 /**
  * Adds one to a given number.
  * @param {number} n

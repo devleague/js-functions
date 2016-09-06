@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "http-server -p 8888",
-    "test": "karma start --single-run --no-auto-watch --browsers PhantomJS"
+    "test": "karma start --single-run --no-auto-watch --browsers PhantomJS",
+    "cli-test": "mocha; exit 0"
   },
   "repository": {
     "type": "git",

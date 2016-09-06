@@ -1,5 +1,14 @@
+var chai = require('chai');
 var expect = chai.expect;
 var should = chai.should();
+
+var sinon = require('sinon');
+
+var vm = require("vm");
+var fs = require("fs");
+var data = fs.readFileSync('./functions.js');
+var script = new vm.Script(data);
+script.runInThisContext();
 
 describe("Main", function() {
   var sandbox;
@@ -9,8 +18,8 @@ describe("Main", function() {
     sandbox = sinon.sandbox.create();
 
     // stub some console methods
-    sandbox.stub(window.console, "log");
-    sandbox.stub(window.console, "error");
+    sandbox.stub(console, "log");
+    sandbox.stub(console, "error");
   });
 
   afterEach(function() {
