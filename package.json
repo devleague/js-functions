@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "http-server -p 8888",
+    "start": "serve",
     "test": "karma start --single-run --no-auto-watch --browsers PhantomJS"
   },
   "repository": {

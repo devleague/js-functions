@@ -3,11 +3,19 @@
 Create 20 functions by following the comments in `functions.js`.
 *Write all of functions below in `functions.js`*
 
+## Requirements
+
+_if you don't already have `serve` installed_
+
+```sh
+npm install -g serve
+```
+
 ## Getting Started
 
 1. Clone this repository and change your current working directory to this repository.
 1. Install all dependencies by running the command: `npm install`
-1. Run the command `npm start` and then visit [localhost:8888](http://127.0.0.1:8888/) to see all the failing tests.
+1. Run the command `npm start` and then visit [localhost:3000](http://127.0.0.1:3000/) to see all the failing tests.
 1. Your work will be done in the file named: `functions.js`
 1. Your tests are broken, fix them!
 1. Refresh the page to see passing tests.
