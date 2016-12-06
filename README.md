@@ -3,14 +3,6 @@
 Create 20 functions by following the comments in `functions.js`.
 *Write all of functions below in `functions.js`*
 
-## Requirements
-
-_if you don't already have `serve` installed_
-
-```sh
-npm install -g serve
-```
-
 ## Getting Started
 
 1. Clone this repository and change your current working directory to this repository.
