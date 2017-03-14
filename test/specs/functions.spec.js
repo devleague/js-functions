@@ -286,13 +286,10 @@ describe("Main", function() {
   describe("#createCircle", function() {
     var radius, circle;
 
-    it("should be a function", function(done) {
-      setTimeout(function() {
-        (typeof createCircle).should.equal("function");
-        radius = 4;
-        circle = createCircle(radius);
-        done();
-      }, 1000);
+    it("should be a function", function() {
+      (typeof createCircle).should.equal("function");
+      radius = 4;
+      circle = createCircle(radius);
     });
 
     it("should return a circle object with the properties circumference and area", function() {
