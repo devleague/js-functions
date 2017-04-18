@@ -4,12 +4,27 @@
  * @return {string} the number as a string
  */
 
+function numberToString(_Number_){
+	var num = _Number_.toString();
+	return num;
+	// return number.toString();
+	// return "" + number;
+
+}
+console.log(numberToString(5));
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
+
+ function increase(n){
+ 	n+=1;
+ 	return n;
+ 	// return n+1
+ 	// return ++n;
+ }
 
 
 /**
@@ -18,6 +33,12 @@
  * @return {number}
  */
 
+function decrease(n){
+	n-=1;
+	return n;
+	// returnn-1;
+	// return --n;
+}
 
 /**
  * Adds two numbers.
@@ -26,6 +47,9 @@
  * @return {number} the sum
  */
 
+function add(x,y){
+	return x+y;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -34,6 +58,9 @@
  * @return {number} the difference
  */
 
+function subtract(x,y){
+	return x-y;
+}
 
 /**
  * Multiplies two numbers.
@@ -42,6 +69,9 @@
  * @return {number} the product
  */
 
+function multiply(x,y){
+	return x*y;
+}
 
 /**
  * Divides the first number by the second.
@@ -50,6 +80,9 @@
  * @return {number} the quotient
  */
 
+function divide(x,y){
+	return x/y;
+}
 
 /**
  * Multiplies a number by itself.
@@ -57,6 +90,9 @@
  * @return {number} squared
  */
 
+function square(x){
+	return x*x;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -67,6 +103,33 @@
  * @return {number} the result
  */
 
+// var sum = add(x,y);
+// var difference = subtract(x,y);
+// var multResult = multiply;
+// var divResult = divide;
+
+function calculate(operation,x,y){
+	if(operation === "add"){
+		var sum = x + y;
+		console.log(x + " + " + y + " = " + sum);
+		return sum;
+	}
+	if(operation === "subtract"){
+		var difference = x - y;
+		console.log(x + " - " + y + " = " + difference);
+		return difference;
+	}
+	if(operation === "multiply"){
+		var product = x * y;
+		console.log(x + " * " + y + " = " + product);
+		return product;
+	}
+	if(operation === "divide"){
+		var quotient = x / y;
+		console.log(x + " / " + y + " = " + quotient);
+		return quotient;
+	}
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -75,6 +138,9 @@
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan(a,b){
+	return a>b;
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -83,6 +149,9 @@
  * @return {boolean} `a` is smaller than `b`
  */
 
+function isLessThan(a,b){
+	return a<b;
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -91,6 +160,13 @@
  * @return {boolean} the numbers are equal
  */
 
+function areEqual(a,b){
+	if(a===b){
+		return true;
+	}else{
+		return false;
+	}
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -99,6 +175,9 @@
  * @return {number} the smallest number
  */
 
+function minimum(x,y){
+	return Math.min(x,y);
+}
 
 /**
  * Returns the largest value of two numbers.
@@ -107,6 +186,9 @@
  * @return {number} the largest number
  */
 
+function maximum(x,y){
+	return Math.max(x,y);
+}
 
 /**
  * Returns true if `n` is even.
@@ -114,6 +196,12 @@
  * @return {boolean} the number is even
  */
 
+function isEven(n){
+	// return (n % 2 === 0);
+	if(n % 2 === 0){
+		return true;
+	}
+}
 
 /**
  * Returns true if `n` is odd.
@@ -121,6 +209,13 @@
  * @return {boolean} the number is odd
  */
 
+function isOdd(n){
+	// return (n % 2 === 1);
+	// return !isEven(n);
+	if(n % 1 === 0){
+		return true;
+	}
+}
 
 /**
  * Returns a letter grade.
@@ -134,6 +229,26 @@
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score,total){
+	var grade = (score/total)*100;
+	if(grade>=90){
+		return "A";
+	}else{
+		if(grade>=80){
+			return "B";
+		}else{
+			if(grade>=70){
+				return "C";
+			}else{
+				if(grade>=60){
+					return "D";
+				}
+					 return "F";
+			}
+		}
+	}
+	return grade;
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -142,6 +257,16 @@
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+
+function incrementReviews(restaurant){
+	var menu = restaurant.reviews;
+	if(!menu){
+		restaurant.reviews = 1;
+	}else{
+		restaurant.reviews = increase(restaurant.reviews);
+	}
+	return restaurant;
+}
 
 
 /**
@@ -152,6 +277,11 @@
  */
 
 
+function combine(word1,word2){
+	// return [word1,word2].join(' ');
+	return word1 + " " + word2;
+}
+
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
@@ -160,3 +290,10 @@
  * @return {object} circle
  */
 
+function createCircle(radius){
+	var circle = {
+		circumference: 2*Math.PI*radius,
+		area: Math.PI*radius*radius
+	};
+	return circle;
+}
