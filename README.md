@@ -242,7 +242,7 @@ Joins two strings with a space.
 
 createCircle(radius)
 -----------------------------
-Returns a circle object with the properties `circumferance` and `area`.
+Returns a circle object with the properties `circumference` and `area`.
 
 Use [Math.PI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI) for the value π.
 
