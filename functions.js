@@ -4,6 +4,10 @@
  * @return {string} the number as a string
  */
 
+function numberToString(n) {
+  var num = n.toString();
+  return num;
+}
 
 /**
  * Adds one to a given number.
@@ -11,6 +15,10 @@
  * @return {number}
  */
 
+function increase(incrNum) {
+  var increment = ++incrNum;
+  return increment;
+}
 
 /**
  * Subtracts one from a given number.
@@ -18,6 +26,10 @@
  * @return {number}
  */
 
+function decrease(decrNum) {
+  var decrement = --decrNum;
+  return decrement;
+}
 
 /**
  * Adds two numbers.
@@ -26,6 +38,10 @@
  * @return {number} the sum
  */
 
+function add(x,y) {
+  var addValue = x + y;
+  return addValue;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -34,6 +50,10 @@
  * @return {number} the difference
  */
 
+function subtract (x,y) {
+  var subtractValue = x - y;
+  return subtractValue;
+}
 
 /**
  * Multiplies two numbers.
@@ -42,6 +62,10 @@
  * @return {number} the product
  */
 
+function multiply(x,y) {
+  var multiplyValue = x * y;
+  return multiplyValue;
+}
 
 /**
  * Divides the first number by the second.
@@ -50,6 +74,10 @@
  * @return {number} the quotient
  */
 
+function divide(x,y) {
+  var divideValue = x / y;
+  return divideValue;
+}
 
 /**
  * Multiplies a number by itself.
@@ -57,6 +85,10 @@
  * @return {number} squared
  */
 
+function square(x) {
+  var squareValue = x * x;
+  return squareValue;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -67,6 +99,51 @@
  * @return {number} the result
  */
 
+function calculate(operation,x,y) {
+  var calculateResult;
+  switch(operation) {
+    case 'add':
+    calculateResult = x + y;
+    console.log(x + ' + ' + y + ' = ' + calculateResult);
+    break;
+    case 'subtract':
+    calculateResult = x - y;
+    console.log(x + ' - ' + y + ' = ' + calculateResult);
+    break;
+    case 'multiply':
+    calculateResult = x * y;
+    console.log(x + ' * ' + y + ' = ' + calculateResult);
+    break;
+    case 'divide':
+    calculateResult = x / y;
+    console.log(x + ' / ' + y + ' = ' + calculateResult);
+    break;
+    default:
+    text = "Enter an operation.";
+  }
+  return calculateResult;
+}
+
+// Also wrote an else if version of the calculate function, but decided on switch because of better performance
+// function calculate(operation,x,y) {
+//   var calculateResult;
+//   if (operation === 'add') {
+//     calculateResult = x + y;
+//     console.log(x + ' + ' + y + ' = ' + calculateResult);
+//   } else if (operation === 'subtract') {
+//     calculateResult = x - y;
+//     console.log(x + ' - ' + y + ' = ' + calculateResult);
+//   } else if (operation === 'multiply') {
+//     calculateResult = x * y;
+//     console.log(x + ' * ' + y + ' = ' + calculateResult);
+//   } else if (operation === 'divide') {
+//     calculateResult = x / y;
+//     console.log(x + ' / ' + y + ' = ' + calculateResult);
+//   } else {
+//     console.log("Enter an operation.");
+//   }
+//   return calculateResult;
+// }
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -75,6 +152,13 @@
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan(a,b) {
+  if (a > b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -83,6 +167,13 @@
  * @return {boolean} `a` is smaller than `b`
  */
 
+function isLessThan(a,b) {
+  if (a < b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -91,6 +182,13 @@
  * @return {boolean} the numbers are equal
  */
 
+function areEqual(a,b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -99,6 +197,10 @@
  * @return {number} the smallest number
  */
 
+function minimum(x,y) {
+  var minimumValue = Math.min(x, y);
+  return minimumValue;
+}
 
 /**
  * Returns the largest value of two numbers.
@@ -107,6 +209,10 @@
  * @return {number} the largest number
  */
 
+function maximum(x,y) {
+  var maximumValue = Math.max(x, y);
+  return maximumValue;
+}
 
 /**
  * Returns true if `n` is even.
@@ -114,6 +220,13 @@
  * @return {boolean} the number is even
  */
 
+function isEven(n) {
+  if (n % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns true if `n` is odd.
@@ -121,6 +234,13 @@
  * @return {boolean} the number is odd
  */
 
+function isOdd(n) {
+  if (Math.abs(n % 2) === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * Returns a letter grade.
@@ -134,6 +254,19 @@
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score,total) {
+  if (score / total >= 0.9 && score / total <=1) {
+    return "A";
+  } else if (score / total >= 0.8 && score / total < 0.9) {
+    return "B";
+  } else if (score / total >= 0.7 && score / total < 0.8) {
+    return "C";
+  } else if (score / total >= 0.6 && score / total < 0.7) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -143,6 +276,14 @@
  * @return {object} restaurant
  */
 
+function incrementReviews(restaurant) {
+  if (restaurant.hasOwnProperty("reviews") === true) {
+    restaurant.reviews += 1;
+  } else {
+    restaurant.reviews = 1;
+  }
+  return restaurant;
+}
 
 /**
  * Joins two strings with a space.
@@ -151,6 +292,10 @@
  * @return {string} joined the words joined with a space
  */
 
+function combine(word1,word2) {
+  var combineResult = word1 + ' ' + word2;
+  return combineResult;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -160,3 +305,10 @@
  * @return {object} circle
  */
 
+function createCircle(radius) {
+  var circle = {
+    circumference : 2 * Math.PI * radius,
+    area : Math.PI * radius * radius
+  };
+ return circle;
+}
