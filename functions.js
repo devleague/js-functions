@@ -99,8 +99,50 @@ function square(x) {
  * @return {number} the result
  */
 
+function calculate(operation,x,y) {
+  var calculateResult;
+  switch(operation) {
+    case 'add':
+    calculateResult = x + y;
+    console.log(x + ' + ' + y + ' = ' + calculateResult);
+    break;
+    case 'subtract':
+    calculateResult = x - y;
+    console.log(x + ' - ' + y + ' = ' + calculateResult);
+    break;
+    case 'multiply':
+    calculateResult = x * y;
+    console.log(x + ' * ' + y + ' = ' + calculateResult);
+    break;
+    case 'divide':
+    calculateResult = x / y;
+    console.log(x + ' / ' + y + ' = ' + calculateResult);
+    break;
+    default:
+    text = "Enter an operation.";
+  }
+  return calculateResult;
+}
+
+// Also wrote an else if version of the calculate function, but decided on switch because of better performance
 // function calculate(operation,x,y) {
-//   if (operation = "")
+//   var calculateResult;
+//   if (operation === 'add') {
+//     calculateResult = x + y;
+//     console.log(x + ' + ' + y + ' = ' + calculateResult);
+//   } else if (operation === 'subtract') {
+//     calculateResult = x - y;
+//     console.log(x + ' - ' + y + ' = ' + calculateResult);
+//   } else if (operation === 'multiply') {
+//     calculateResult = x * y;
+//     console.log(x + ' * ' + y + ' = ' + calculateResult);
+//   } else if (operation === 'divide') {
+//     calculateResult = x / y;
+//     console.log(x + ' / ' + y + ' = ' + calculateResult);
+//   } else {
+//     console.log("Enter an operation.");
+//   }
+//   return calculateResult;
 // }
 
 /**
