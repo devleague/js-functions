@@ -3,21 +3,27 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
+let numberToString = function (n) {
+  return n.toString();
+};
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
+let increase = function (n) {
+  return n + 1;
+};
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
-
+let decrease = function (n) {
+  return n - 1;
+};
 
 /**
  * Adds two numbers.
@@ -25,7 +31,9 @@
  * @param {number} y
  * @return {number} the sum
  */
-
+let add = function (x,y) {
+  return x + y;
+};
 
 /**
  * Subtracts the second number from the first.
@@ -33,7 +41,9 @@
  * @param {number} y
  * @return {number} the difference
  */
-
+let subtract = function (x,y) {
+  return x - y;
+};
 
 /**
  * Multiplies two numbers.
@@ -41,7 +51,9 @@
  * @param {number} y
  * @return {number} the product
  */
-
+let multiply = function (x,y) {
+  return x * y;
+};
 
 /**
  * Divides the first number by the second.
@@ -49,14 +61,18 @@
  * @param {number} y
  * @return {number} the quotient
  */
-
+let divide = function (x,y) {
+return  x / y;
+};
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+let square = function (x) {
+  return (x * x);
+};
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -159,4 +175,3 @@
  * @param {number} radius
  * @return {object} circle
  */
-
