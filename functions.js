@@ -5,8 +5,9 @@
  */
 
 function numberToString(n) {
-	return "" + n;   //need to change
-};
+	return "" + n;
+	
+}
 
 /**
  * Adds one to a given number.
@@ -14,8 +15,8 @@ function numberToString(n) {
  * @return {number}
  */
 function increase(n){
-	var i = n + 1;
-	return i;
+	 n++;
+	 return n;
 }
 
 /**
@@ -24,8 +25,8 @@ function increase(n){
  * @return {number}
  */
 function decrease(n){
-	var i = n - 1;
-	return i;
+	n--;
+	return n;
 }
 
 /**
@@ -99,8 +100,30 @@ function divide(x,y) {
  * @return {number} the result
  */
 
- function calculate(){
+function calculate(operation, x, y) { 
 
+	var result=0;
+
+ 	if (operation == "add") {
+ 		result = x+y;
+ 		console.log(x + " + " + y + " = " + result);
+ 		return result;
+ 	} 
+ 	 else if (operation == "subtract") {
+ 		result=x-y;
+ 		console.log(x + " - " + y + " = " + result);
+ 		return result;
+ 	}
+ 	 else if (operation==="multiply") {
+ 		result=x*y;
+ 		console.log(x + " * " + y + " = " + result);
+ 		return result;
+ 	}
+ 	 if (operation=="divide") {
+ 		result=x/y;
+ 	    console.log(x + " / " + y + " = " + result);
+ 	    return result;
+ 	}
  }
 
 
@@ -203,9 +226,26 @@ function isEven(n){
  * @return {string} the score represented as a letter grade
  */
 
-function letterGrade(){
+function letterGrade(score,total){
+	var percent = Math.floor((score/total)*100);
+	
+	if (percent >= 90){
+		return "A";
+	}
+	else if(percent >= 80){
+		return "B";
+	}
+	else if(percent >= 70){
+		return "C";
+	}
+	else if(percent >= 60){
+		return "D";
+	}
+	else 
+		return "F";
 
 }
+
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -214,8 +254,15 @@ function letterGrade(){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-function incrementReviews(){
+function incrementReviews(restaurant){
+	console.log(restaurant);
 
+	if(restaurant.reviews != undefined){
+		restaurant.reviews++;
+	}else{
+		restaurant.reviews = 1;
+	}
+	return restaurant;
 }
 
 /**
@@ -226,7 +273,8 @@ function incrementReviews(){
  */
 
  function combine(word1,word2) {
- 	return word1 + " " + word2;
+ 	var combined= word1 + " " + word2;
+ 	return combined;
 }
 
 /**
@@ -237,7 +285,10 @@ function incrementReviews(){
  * @return {object} circle
  */
 
- function createCircle(){
-
- }
+function createCircle(radius) {
+	var circle = {};
+    circle.circumference = 2 * Math.PI * radius;
+    circle.area = Math.PI * (radius * radius);
+    return circle;
+}
 
