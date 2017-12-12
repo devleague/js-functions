@@ -3,7 +3,7 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-let numberToString = function (n) {
+let numberToString = function(n) {
   return n.toString();
 };
 
@@ -12,7 +12,7 @@ let numberToString = function (n) {
  * @param {number} n
  * @return {number}
  */
-let increase = function (n) {
+let increase = function(n) {
   return n + 1;
 };
 
@@ -21,7 +21,7 @@ let increase = function (n) {
  * @param {number} n
  * @return {number}
  */
-let decrease = function (n) {
+let decrease = function(n) {
   return n - 1;
 };
 
@@ -31,7 +31,7 @@ let decrease = function (n) {
  * @param {number} y
  * @return {number} the sum
  */
-let add = function (x,y) {
+let add = function(x, y) {
   return x + y;
 };
 
@@ -41,7 +41,7 @@ let add = function (x,y) {
  * @param {number} y
  * @return {number} the difference
  */
-let subtract = function (x,y) {
+let subtract = function(x, y) {
   return x - y;
 };
 
@@ -51,7 +51,7 @@ let subtract = function (x,y) {
  * @param {number} y
  * @return {number} the product
  */
-let multiply = function (x,y) {
+let multiply = function(x, y) {
   return x * y;
 };
 
@@ -61,8 +61,8 @@ let multiply = function (x,y) {
  * @param {number} y
  * @return {number} the quotient
  */
-let divide = function (x,y) {
-return  x / y;
+let divide = function(x, y) {
+  return x / y;
 };
 
 /**
@@ -70,7 +70,7 @@ return  x / y;
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-let square = function (x) {
+let square = function(x) {
   return (x * x);
 };
 
@@ -82,8 +82,24 @@ let square = function (x) {
  * @param {number} y
  * @return {number} the result
  */
-function calculate (str,x,y) {
-
+function calculate(str, x, y) {
+  if (str === "add") {
+    let add = x + y;
+    console.log(x + " + " + y + " = " + add);
+    return add;
+  } else if (str === "subtract") {
+    let subtract = x - y;
+    console.log(x + " - " + y + " = " + subtract);
+    return subtract;
+  } else if (str === "multiply") {
+    let multiply = x * y;
+    console.log(x + " * " + y + " = " + multiply);
+    return multiply;
+  } else if (str === "divide") {
+    let divide = x / y;
+    console.log(x + " / " + y + " = " + divide);
+    return divide;
+  }
 };
 /**
  * Returns true if `a` is greater than `b`.
@@ -91,12 +107,11 @@ function calculate (str,x,y) {
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-let isGreaterThan = function (a,b) {
+let isGreaterThan = function(a, b) {
   if (a > b) {
     return true
-  }
-  else
-  return false
+  } else
+    return false
 };
 
 /**
@@ -105,12 +120,11 @@ let isGreaterThan = function (a,b) {
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-let isLessThan = function (a,b) {
+let isLessThan = function(a, b) {
   if (a < b) {
     return true
-  }
-  else
-  return false
+  } else
+    return false
 };
 
 /**
@@ -119,12 +133,11 @@ let isLessThan = function (a,b) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-let areEqual = function (a,b) {
+let areEqual = function(a, b) {
   if (a === b) {
     return true
-  }
-  else
-  return false
+  } else
+    return false
 };
 
 /**
@@ -133,8 +146,8 @@ let areEqual = function (a,b) {
  * @param {number} y
  * @return {number} the smallest number
  */
-let minimum = function (x,y) {
-return Math.min(x,y);
+let minimum = function(x, y) {
+  return Math.min(x, y);
 
 };
 
@@ -144,8 +157,8 @@ return Math.min(x,y);
  * @param {number} y
  * @return {number} the largest number
  */
-let maximum = function (x,y) {
-  return Math.max(x,y);
+let maximum = function(x, y) {
+  return Math.max(x, y);
 };
 
 /**
@@ -153,7 +166,7 @@ let maximum = function (x,y) {
  * @param {number} n
  * @return {boolean} the number is even
  */
-let isEven = function (n){
+let isEven = function(n) {
   return n % 2 === 0;
 }
 
@@ -162,7 +175,7 @@ let isEven = function (n){
  * @param {number} n
  * @return {boolean} the number is odd
  */
-let isOdd = function (n) {
+let isOdd = function(n) {
   return Math.abs(n % 2) === 1;
 }
 
@@ -177,28 +190,28 @@ let isOdd = function (n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-function letterGrade (score, total) {
-let grade = (score / total) * 100;
+function letterGrade(score, total) {
+  let grade = (score / total) * 100;
   switch (true) {
-  
-  case grade >= 90:
-    return "A";
-    break;
-  
-    case grade >= 80:
-    return "B";
-    break;
 
-  case grade >= 70:
-    return "C";
-    break;
-   
-  case grade >= 60:
-    return "D";
-    break;
-  
-  default:
-    return "F";
+    case grade >= 90:
+      return "A";
+      break;
+
+    case grade >= 80:
+      return "B";
+      break;
+
+    case grade >= 70:
+      return "C";
+      break;
+
+    case grade >= 60:
+      return "D";
+      break;
+
+    default:
+      return "F";
   }
 };
 
@@ -209,20 +222,25 @@ let grade = (score / total) * 100;
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-function incrementReviews () {
-
+function incrementReviews(restaurant) {
+  if (restaurant.reviews >= 1) {
+    restaurant.reviews++;
+  } else if (restaurant.reviews === undefined) {
+    restaurant.reviews = 1;
+  }
+  return restaurant;
 };
- 
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
- let combine = function (word1, word2) {
-   let words = word1 + " " + word2;
-   return words;
- };
+let combine = function(word1, word2) {
+  let words = word1 + " " + word2;
+  return words;
+};
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -231,9 +249,10 @@ function incrementReviews () {
  * @param {number} radius
  * @return {object} circle
  */
-function createCircle (radius) {
-let circle = {
-  circumference:(2 * Math.PI * radius),
-  area: (Math.PI * radius * radius),
+
+function createCircle(radius) {
+  let circle = {};
+  circle.circumference = (2 * Math.PI * radius);
+  circle.area = (Math.PI * radius * radius);
+  return circle;
 }
-};
