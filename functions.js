@@ -71,7 +71,7 @@ let divide = function(x, y) {
  * @return {number} squared
  */
 let square = function(x) {
-  return (x * x);
+  return x * x;
 };
 
 /**
@@ -100,7 +100,7 @@ function calculate(str, x, y) {
     console.log(x + " / " + y + " = " + divide);
     return divide;
   }
-};
+}
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
@@ -108,10 +108,7 @@ function calculate(str, x, y) {
  * @return {boolean} `a` is larger than `b`
  */
 let isGreaterThan = function(a, b) {
-  if (a > b) {
-    return true
-  } else
-    return false
+  return a > b;
 };
 
 /**
@@ -121,10 +118,7 @@ let isGreaterThan = function(a, b) {
  * @return {boolean} `a` is smaller than `b`
  */
 let isLessThan = function(a, b) {
-  if (a < b) {
-    return true
-  } else
-    return false
+  return a < b;
 };
 
 /**
@@ -134,10 +128,7 @@ let isLessThan = function(a, b) {
  * @return {boolean} the numbers are equal
  */
 let areEqual = function(a, b) {
-  if (a === b) {
-    return true
-  } else
-    return false
+  return a === b;
 };
 
 /**
@@ -148,7 +139,6 @@ let areEqual = function(a, b) {
  */
 let minimum = function(x, y) {
   return Math.min(x, y);
-
 };
 
 /**
@@ -168,7 +158,7 @@ let maximum = function(x, y) {
  */
 let isEven = function(n) {
   return n % 2 === 0;
-}
+};
 
 /**
  * Returns true if `n` is odd.
@@ -177,7 +167,7 @@ let isEven = function(n) {
  */
 let isOdd = function(n) {
   return Math.abs(n % 2) === 1;
-}
+};
 
 /**
  * Returns a letter grade.
@@ -191,9 +181,8 @@ let isOdd = function(n) {
  * @return {string} the score represented as a letter grade
  */
 function letterGrade(score, total) {
-  let grade = (score / total) * 100;
+  let grade = score / total * 100;
   switch (true) {
-
     case grade >= 90:
       return "A";
       break;
@@ -213,7 +202,7 @@ function letterGrade(score, total) {
     default:
       return "F";
   }
-};
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -229,7 +218,7 @@ function incrementReviews(restaurant) {
     restaurant.reviews = 1;
   }
   return restaurant;
-};
+}
 
 /**
  * Joins two strings with a space.
@@ -252,7 +241,7 @@ let combine = function(word1, word2) {
 
 function createCircle(radius) {
   let circle = {};
-  circle.circumference = (2 * Math.PI * radius);
-  circle.area = (Math.PI * radius * radius);
+  circle.circumference = 2 * Math.PI * radius;
+  circle.area = Math.PI * radius * radius;
   return circle;
 }
