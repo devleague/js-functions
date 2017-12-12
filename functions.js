@@ -82,15 +82,22 @@ let square = function (x) {
  * @param {number} y
  * @return {number} the result
  */
+function calculate (str,x,y) {
 
-
+};
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+let isGreaterThan = function (a,b) {
+  if (a > b) {
+    return true
+  }
+  else
+  return false
+};
 
 /**
  * Returns true if `a` is less than `b`.
@@ -98,7 +105,13 @@ let square = function (x) {
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+let isLessThan = function (a,b) {
+  if (a < b) {
+    return true
+  }
+  else
+  return false
+};
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -106,7 +119,13 @@ let square = function (x) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+let areEqual = function (a,b) {
+  if (a === b) {
+    return true
+  }
+  else
+  return false
+};
 
 /**
  * Returns the smallest value of two numbers.
@@ -114,7 +133,10 @@ let square = function (x) {
  * @param {number} y
  * @return {number} the smallest number
  */
+let minimum = function (x,y) {
+return Math.min(x,y);
 
+};
 
 /**
  * Returns the largest value of two numbers.
@@ -122,21 +144,27 @@ let square = function (x) {
  * @param {number} y
  * @return {number} the largest number
  */
-
+let maximum = function (x,y) {
+  return Math.max(x,y);
+};
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+let isEven = function (n){
+  return n % 2 === 0;
+}
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+let isOdd = function (n) {
+  return Math.abs(n % 2) === 1;
+}
 
 /**
  * Returns a letter grade.
@@ -149,7 +177,30 @@ let square = function (x) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function letterGrade (score, total) {
+let grade = (score / total) * 100;
+  switch (true) {
+  
+  case grade >= 90:
+    return "A";
+    break;
+  
+    case grade >= 80:
+    return "B";
+    break;
 
+  case grade >= 70:
+    return "C";
+    break;
+   
+  case grade >= 60:
+    return "D";
+    break;
+  
+  default:
+    return "F";
+  }
+};
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -158,15 +209,20 @@ let square = function (x) {
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+function incrementReviews () {
 
-
+};
+ 
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-
+ let combine = function (word1, word2) {
+   let words = word1 + " " + word2;
+   return words;
+ };
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -175,3 +231,9 @@ let square = function (x) {
  * @param {number} radius
  * @return {object} circle
  */
+function createCircle (radius) {
+let circle = {
+  circumference:(2 * Math.PI * radius),
+  area: (Math.PI * radius * radius),
+}
+};
