@@ -102,12 +102,17 @@ function divide(x, y){
 
 
 
+
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+
+ function isGreaterThan (a, b) {
+ 	return a > b;
+ }
 
 
 /**
@@ -117,6 +122,9 @@ function divide(x, y){
  * @return {boolean} `a` is smaller than `b`
  */
 
+function isLessThan (a, b){
+	return a < b; 
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -124,6 +132,10 @@ function divide(x, y){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+
+ function areEqual (a, b){
+ 	return a === b;
+ }
 
 
 /**
@@ -133,6 +145,9 @@ function divide(x, y){
  * @return {number} the smallest number
  */
 
+function minimum (x, y){
+	return Math.min(x, y);
+}
 
 /**
  * Returns the largest value of two numbers.
@@ -141,6 +156,9 @@ function divide(x, y){
  * @return {number} the largest number
  */
 
+function maximum (x, y){
+	return Math.max(x, y);
+}
 
 /**
  * Returns true if `n` is even.
@@ -148,6 +166,9 @@ function divide(x, y){
  * @return {boolean} the number is even
  */
 
+function isEven(n){
+	return n % 2 === 0;
+}
 
 /**
  * Returns true if `n` is odd.
@@ -155,6 +176,9 @@ function divide(x, y){
  * @return {boolean} the number is odd
  */
 
+function isOdd(n){
+	return n % 2 !== 0;
+}
 
 /**
  * Returns a letter grade.
@@ -168,6 +192,20 @@ function divide(x, y){
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(x, y){
+	var grade = divide (x, y);
+	if (grade >= .9){
+		return 'A';
+	}else if (grade >= .8){
+		return 'B';
+	}else if (grade >= .7){
+		return 'C';
+	}else if (grade >= .6){
+		return 'D';
+	}else{
+		return 'F';
+	}
+}
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
