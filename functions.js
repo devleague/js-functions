@@ -4,6 +4,10 @@
  * @return {string} the number as a string
  */
 
+function numberToString(n){
+	return n + '';
+
+}
 
 /**
  * Adds one to a given number.
@@ -11,6 +15,10 @@
  * @return {number}
  */
 
+function increase(n){
+	n = n + 1;
+	return n;
+}
 
 /**
  * Subtracts one from a given number.
@@ -18,6 +26,10 @@
  * @return {number}
  */
 
+function decrease(n){
+	n = n - 1;
+	return n;
+}
 
 /**
  * Adds two numbers.
@@ -26,6 +38,10 @@
  * @return {number} the sum
  */
 
+function add(x, y){
+	var sum = x + y;
+	return sum;
+}
 
 /**
  * Subtracts the second number from the first.
@@ -34,6 +50,10 @@
  * @return {number} the difference
  */
 
+function subtract(x, y){
+	var diff = x - y;
+	return diff;
+}
 
 /**
  * Multiplies two numbers.
@@ -42,6 +62,10 @@
  * @return {number} the product
  */
 
+function multiply(x, y){
+	var by = x * y;
+	return by;
+}
 
 /**
  * Divides the first number by the second.
@@ -50,12 +74,21 @@
  * @return {number} the quotient
  */
 
+function divide(x, y){
+	var divi = x / y;
+	return divi;
+}
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+
+ function square(x){
+ 	var squ = x * x;
+ 	return squ;
+ }
 
 
 /**
@@ -66,6 +99,7 @@
  * @param {number} y
  * @return {number} the result
  */
+
 
 
 /**
