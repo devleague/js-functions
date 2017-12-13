@@ -287,7 +287,7 @@ function isOdd(n){
  */
 
  function createCircle(radius){
- 	var circleee = {};
+ 	var circle = {};
  	circle.circumference = 2*radius*Math.PI;
  	circle.area = Math.PI*radius*radius;
  	return circle;
