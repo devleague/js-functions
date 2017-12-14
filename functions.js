@@ -129,7 +129,6 @@ function calculate(operation, x, y) {
  	return a > b;
  }
 
-
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
@@ -151,7 +150,6 @@ function isLessThan (a, b) {
  function areEqual (a, b) {
  	return a === b;
  }
-
 
 /**
  * Returns the smallest value of two numbers.
