@@ -4,8 +4,8 @@
  * @return {string} the number as a string
  */
 
-function numberToString(num) {
-    return num + '';
+function numberToString(n) {
+    return n + '';
 }
 
 /**
@@ -35,6 +35,9 @@ function increase(n) {
  * @return {number} the sum
  */
 
+ function add(x,y) {
+     return x + y;
+ }
 
 /**
  * Subtracts the second number from the first.
