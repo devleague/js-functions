@@ -164,6 +164,9 @@ function isLessThan(a, b) {
  * @return {number} the largest number
  */
 
+ function maximum(x, y) {
+     return Math.max(x,y);
+ }
 
 /**
  * Returns true if `n` is even.
@@ -171,6 +174,9 @@ function isLessThan(a, b) {
  * @return {boolean} the number is even
  */
 
+ function isEven(n) {
+     return Math.abs(n) % 2 === 0;
+ }
 
 /**
  * Returns true if `n` is odd.
@@ -178,6 +184,9 @@ function isLessThan(a, b) {
  * @return {boolean} the number is odd
  */
 
+function isOdd(n) {
+    return Math.abs(n) % 2 === 1;
+}
 
 /**
  * Returns a letter grade.
@@ -191,6 +200,24 @@ function isLessThan(a, b) {
  * @return {string} the score represented as a letter grade
  */
 
+ function letterGrade(score, total) {
+    let grade = (score/total)*100;
+    if (grade <= 100 && grade >= 90) {
+        return 'A';
+    }
+    if (grade < 90 && grade >= 80) {
+        return 'B';
+    }
+    if (grade < 80 && grade >= 70) {
+        return 'C';
+    }
+    if (grade < 70 && grade >= 60) {
+        return 'D';
+    }
+    if (grade < 60 && grade >= 0) {
+        return 'F';
+    }
+ }
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -200,6 +227,15 @@ function isLessThan(a, b) {
  * @return {object} restaurant
  */
 
+forin
+function incrementReviews(restaurant) {
+    if (restaurant.hasOwnProperty('reviews')) {
+        restaurant['reviews']++;
+    } else {
+        restaurant['reviews'] = 1;
+    }
+    return restaurant;
+}
 
 /**
  * Joins two strings with a space.
@@ -208,6 +244,9 @@ function isLessThan(a, b) {
  * @return {string} joined the words joined with a space
  */
 
+ function combine(word1, word2) {
+     return word1 + " " + word2;
+ }
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -217,3 +256,6 @@ function isLessThan(a, b) {
  * @return {object} circle
  */
 
+ function createCircle(radius) {
+     return {circumference: Math.PI * 2 * radius, area: Math.PI * radius * radius}
+ }
